@@ -6,4 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".PlayerDetailsActivity">
 
+    <ImageButton
+        android:id="@+id/img_close_play_details_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/ic_back"
+        android:padding="@dimen/padding_normal_2"
+        android:minWidth="60dp"
+        android:minHeight="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

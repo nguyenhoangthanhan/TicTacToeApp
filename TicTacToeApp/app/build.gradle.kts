@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,4 +48,5 @@ dependencies {
     implementation(libs.junit)
     implementation(libs.androidx.test.ext.junit)
     implementation(libs.espresso)
+    implementation(libs.core.splashscreen)
 }

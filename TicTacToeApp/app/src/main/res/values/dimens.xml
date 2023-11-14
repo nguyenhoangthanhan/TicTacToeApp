@@ -1,3 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="margin_big_2_80dp">80dp</dimen>
+
+
+    <dimen name="margin_small_1">2dp</dimen>
+    <dimen name="margin_small_2">4dp</dimen>
+    <dimen name="margin_small_3">6dp</dimen>
+    <dimen name="margin_small_4">8dp</dimen>
+    <dimen name="margin_small_5">10dp</dimen>
+    <dimen name="margin_normal_1">12dp</dimen>
+    <dimen name="margin_normal_2">16dp</dimen>
+    <dimen name="margin_normal_3">20dp</dimen>
+    <dimen name="margin_normal_4">24dp</dimen>
+    <dimen name="margin_normal_5">28dp</dimen>
+    <dimen name="margin_normal_6">32dp</dimen>
+    <dimen name="margin_normal_7">36dp</dimen>
+    <dimen name="margin_normal_8">40dp</dimen>
+    <dimen name="margin_normal_9">44dp</dimen>
+
+    <dimen name="padding_small_1">2dp</dimen>
+    <dimen name="padding_small_2">4dp</dimen>
+    <dimen name="padding_small_3">6dp</dimen>
+    <dimen name="padding_small_4">8dp</dimen>
+    <dimen name="padding_small_5">10dp</dimen>
+    <dimen name="padding_normal_1">12dp</dimen>
+    <dimen name="padding_normal_2">16dp</dimen>
+    <dimen name="padding_normal_2_2">18dp</dimen>
+    <dimen name="padding_normal_3">20dp</dimen>
+    <dimen name="padding_normal_4">24dp</dimen>
+    <dimen name="padding_normal_5">28dp</dimen>
+    <dimen name="padding_normal_6">32dp</dimen>
+    <dimen name="padding_normal_7">36dp</dimen>
+    <dimen name="padding_normal_8">40dp</dimen>
+    <dimen name="padding_normal_9">44dp</dimen>
 </resources>
