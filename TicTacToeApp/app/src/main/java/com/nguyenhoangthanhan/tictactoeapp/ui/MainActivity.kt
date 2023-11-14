@@ -1,4 +1,4 @@
-package com.nguyenhoangthanhan.tictactoeapp
+package com.nguyenhoangthanhan.tictactoeapp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

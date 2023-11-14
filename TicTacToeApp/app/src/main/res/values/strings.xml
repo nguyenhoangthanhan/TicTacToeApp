@@ -3,4 +3,10 @@
     <string name="let_s_play_choose_mode">Let\'s play, Choose Mode</string>
     <string name="with_your_friend">With your friend</string>
     <string name="with_ai">With AI</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="next">Next</string>
+    <string name="please_enter_valid_name">Please enter valid name</string>
+    <string name="team_heart">Team heart</string>
+    <string name="team_star">Team star</string>
+    <string name="star_side">You are team star</string>
 </resources>

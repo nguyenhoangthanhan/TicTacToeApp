@@ -33,4 +33,8 @@
     <dimen name="padding_normal_7">36dp</dimen>
     <dimen name="padding_normal_8">40dp</dimen>
     <dimen name="padding_normal_9">44dp</dimen>
+    <dimen name="text_size_normal_1">18sp</dimen>
+    <dimen name="text_size_normal_2">20sp</dimen>
+    <dimen name="text_size_normal_3">22sp</dimen>
+    <dimen name="text_size_normal_4">24sp</dimen>
 </resources>

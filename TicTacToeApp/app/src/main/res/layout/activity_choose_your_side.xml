@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ChooseYourSideActivity">
+
+    <ImageButton
+        android:id="@+id/img_close_choose_your_side_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:minWidth="60dp"
+        android:minHeight="60dp"
+        android:padding="@dimen/padding_normal_2"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/purple_200" />
+
+    <LinearLayout
+        android:id="@+id/l_l_sides_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/img_close_choose_your_side_screen">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_heart"
+            app:tint="@color/purple_200" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star"
+            app:tint="@color/purple_200" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_sides_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/l_l_sides_container">
+
+        <RadioButton
+            android:id="@+id/rb_heart"
+            style="@style/primaryTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/team_heart"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/text_size_normal_4" />
+
+        <RadioButton
+            android:id="@+id/rb_star"
+            style="@style/primaryTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="@string/team_star"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/text_size_normal_4" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_your_selected_side"
+        style="@style/primaryTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/star_side"
+        android:textColor="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_sides_container" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
