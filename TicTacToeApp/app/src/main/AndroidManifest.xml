@@ -13,9 +13,14 @@
         android:theme="@style/Theme.TicTacToeApp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.ChooseYourSideActivity"
-            android:launchMode="singleTop"
+            android:name=".ui.GameActivity"
             android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.ChooseYourSideActivity" />
+        <activity
+            android:name=".ui.ChooseYourSideActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
             android:parentActivityName=".ui.PlayerDetailsActivity" />
         <activity
             android:name=".ui.PlayerDetailsActivity"

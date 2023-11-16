@@ -6,7 +6,7 @@
     </style>
 
     <style name="Theme.TicTacToeApp" parent="Base.Theme.TicTacToeApp" />
-    
+
     <style name="primaryTextStyle">
         <item name="android:textSize">36sp</item>
         <item name="android:textColor">@color/black</item>
@@ -33,5 +33,30 @@
     <style name="AIButtonStyle" parent="buttonStyle">
         <item name="android:background">@drawable/ic_rectangle_shape</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="normalTextStyle" parent="primaryTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="stepperTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_small_5</item>
+        <item name="android:layout_marginTop">@dimen/margin_small_4</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small_5</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small_4</item>
+        <item name="android:background">@drawable/ic_filled_rectangle_shape_outline</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingStart">@dimen/padding_normal_4</item>
+        <item name="android:paddingTop">@dimen/padding_small_3</item>
+        <item name="android:paddingEnd">@dimen/padding_normal_4</item>
+        <item name="android:paddingBottom">@dimen/padding_small_3</item>
     </style>
 </resources>

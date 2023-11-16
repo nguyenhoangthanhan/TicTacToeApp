@@ -19,11 +19,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/purple_200" />
 
+    <TextView
+        android:id="@+id/tv_greet_user"
+        style="@style/normalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_normal_2"
+        android:text="@string/star_side"
+        android:textColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="@id/img_close_choose_your_side_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_close_choose_your_side_screen"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/l_l_sides_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
         android:orientation="horizontal"
         android:weightSum="2"
         app:layout_constraintTop_toBottomOf="@id/img_close_choose_your_side_screen">
@@ -78,7 +91,9 @@
 
     <TextView
         android:id="@+id/tv_your_selected_side"
-        style="@style/primaryTextStyle"
+        style="@style/normalTextStyle"
+        android:textSize="28sp"
+        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -87,5 +102,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rg_sides_container" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next_after_choose_your_side"
+        style="@style/buttonStyle"
+        android:layout_marginTop="@dimen/margin_normal_10"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_your_selected_side" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
