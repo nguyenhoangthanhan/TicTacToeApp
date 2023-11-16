@@ -21,6 +21,11 @@
             android:name=".ui.ChooseYourSideActivity"
             android:exported="false"
             android:launchMode="singleTop"
+            android:parentActivityName=".ui.FriendsDetailsActivity" />
+        <activity
+            android:name=".ui.FriendsDetailsActivity"
+            android:launchMode="singleTop"
+            android:exported="false"
             android:parentActivityName=".ui.PlayerDetailsActivity" />
         <activity
             android:name=".ui.PlayerDetailsActivity"

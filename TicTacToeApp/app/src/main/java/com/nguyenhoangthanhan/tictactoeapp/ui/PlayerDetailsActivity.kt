@@ -41,7 +41,7 @@ class PlayerDetailsActivity : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@PlayerDetailsActivity,
-                    ChooseYourSideActivity::class.java
+                    FriendsDetailsActivity::class.java
                 ).apply {
                     putExtra(AppConstants.USERNAME, username)
                 })

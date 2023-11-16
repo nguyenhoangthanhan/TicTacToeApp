@@ -15,6 +15,7 @@ class ChooseYourSideActivity : AppCompatActivity() {
     private lateinit var binding: ActivityChooseYourSideBinding
 
     private var username: String? = null
+    private var friendName: String? = null
     private var yourSide: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +24,7 @@ class ChooseYourSideActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         username = intent?.getStringExtra(AppConstants.USERNAME) ?: ""
+        friendName = intent?.getStringExtra(AppConstants.FRIEND_NAME) ?: ""
 
         initViews()
         initEvents()
@@ -72,6 +74,7 @@ class ChooseYourSideActivity : AppCompatActivity() {
     private fun goToGameActivity() {
         startActivity(Intent(this, GameActivity::class.java).also {
             it.putExtra(AppConstants.USERNAME, username)
+            it.putExtra(AppConstants.FRIEND_NAME, friendName)
             it.putExtra(AppConstants.SELECTED_SIDE, yourSide)
         })
     }
