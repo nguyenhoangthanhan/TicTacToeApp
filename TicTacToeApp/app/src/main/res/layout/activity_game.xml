@@ -63,10 +63,21 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.95" />
 
+    <View
+        android:id="@+id/view_active_friend_or_robot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_outline_rectangle_active_user"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/guidLine1_1"
+        app:layout_constraintEnd_toEndOf="@id/guidLine8"
+        app:layout_constraintStart_toStartOf="@id/guidLine7"
+        app:layout_constraintTop_toTopOf="@id/guidLine1" />
+
     <TextView
         android:id="@+id/tv_friend_or_a_i_steps"
         style="@style/stepperTextStyle"
-        android:text="1"
+        android:text="0"
         app:layout_constraintBottom_toBottomOf="@id/img_friends_or_AI"
         app:layout_constraintStart_toStartOf="@id/guidLine7"
         app:layout_constraintTop_toTopOf="@id/img_friends_or_AI" />
@@ -180,8 +191,9 @@
                 android:layout_height="0dp"
                 android:contentDescription="@string/description_image_tic_tac_toe_check"
                 android:padding="@dimen/padding_normal_5"
-                android:src="@drawable/ic_star"
+                android:src="?android:selectableItemBackground"
                 android:tag="1"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@id/guid_line_horizontal_1"
                 app:layout_constraintEnd_toEndOf="@id/guid_line_vertical_1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -193,8 +205,9 @@
                 android:layout_height="0dp"
                 android:contentDescription="@string/description_image_tic_tac_toe_check"
                 android:padding="@dimen/padding_normal_5"
-                android:src="@drawable/ic_heart"
+                android:src="?android:selectableItemBackground"
                 android:tag="2"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@id/guid_line_horizontal_1"
                 app:layout_constraintEnd_toEndOf="@id/guid_line_vertical_2"
                 app:layout_constraintStart_toStartOf="@id/guid_line_vertical_1"
@@ -206,8 +219,9 @@
                 android:layout_height="0dp"
                 android:contentDescription="@string/description_image_tic_tac_toe_check"
                 android:padding="@dimen/padding_normal_5"
-                android:src="@drawable/ic_heart"
+                android:src="?android:selectableItemBackground"
                 android:tag="3"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@id/guid_line_horizontal_1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/guid_line_vertical_2"
@@ -219,8 +233,9 @@
                 android:layout_height="0dp"
                 android:contentDescription="@string/description_image_tic_tac_toe_check"
                 android:padding="@dimen/padding_normal_5"
-                android:src="@drawable/ic_heart"
+                android:src="?android:selectableItemBackground"
                 android:tag="4"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@id/guid_line_horizontal_2"
                 app:layout_constraintEnd_toEndOf="@id/guid_line_vertical_1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -232,8 +247,9 @@
                 android:layout_height="0dp"
                 android:contentDescription="@string/description_image_tic_tac_toe_check"
                 android:padding="@dimen/padding_normal_5"
-                android:src="@drawable/ic_star"
+                android:src="?android:selectableItemBackground"
                 android:tag="5"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@id/guid_line_horizontal_2"
                 app:layout_constraintEnd_toEndOf="@id/guid_line_vertical_2"
                 app:layout_constraintStart_toStartOf="@id/guid_line_vertical_1"
@@ -245,8 +261,9 @@
                 android:layout_height="0dp"
                 android:contentDescription="@string/description_image_tic_tac_toe_check"
                 android:padding="@dimen/padding_normal_5"
-                android:src="@drawable/ic_heart"
+                android:src="?android:selectableItemBackground"
                 android:tag="6"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@id/guid_line_horizontal_2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/guid_line_vertical_2"
@@ -258,8 +275,9 @@
                 android:layout_height="0dp"
                 android:contentDescription="@string/description_image_tic_tac_toe_check"
                 android:padding="@dimen/padding_normal_5"
-                android:src="@drawable/ic_heart"
+                android:src="?android:selectableItemBackground"
                 android:tag="7"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/guid_line_vertical_1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -271,8 +289,9 @@
                 android:layout_height="0dp"
                 android:contentDescription="@string/description_image_tic_tac_toe_check"
                 android:padding="@dimen/padding_normal_5"
-                android:src="@drawable/ic_heart"
+                android:src="?android:selectableItemBackground"
                 android:tag="8"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/guid_line_vertical_2"
                 app:layout_constraintStart_toStartOf="@id/guid_line_vertical_1"
@@ -284,8 +303,9 @@
                 android:layout_height="0dp"
                 android:contentDescription="@string/description_image_tic_tac_toe_check"
                 android:padding="@dimen/padding_normal_5"
-                android:src="@drawable/ic_star"
+                android:src="?android:selectableItemBackground"
                 android:tag="9"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/guid_line_vertical_2"
@@ -293,6 +313,17 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view_active_user"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_outline_rectangle_active_user"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/guidLine4_1"
+        app:layout_constraintEnd_toEndOf="@id/guidLine8"
+        app:layout_constraintStart_toStartOf="@id/guidLine7"
+        app:layout_constraintTop_toTopOf="@id/guidLine4" />
 
     <ImageView
         android:id="@+id/img_user"
@@ -319,10 +350,22 @@
     <TextView
         android:id="@+id/tv_user_steps"
         style="@style/stepperTextStyle"
-        android:text="1"
+        android:text="0"
         app:layout_constraintBottom_toBottomOf="@id/img_user"
         app:layout_constraintEnd_toEndOf="@id/guidLine8"
         app:layout_constraintTop_toTopOf="@id/img_user" />
 
+    <TextView
+        android:textSize="@dimen/text_size_normal_5"
+        android:gravity="center"
+        android:text=""
+        style="@style/normalTextStyle"
+        android:layout_marginTop="@dimen/margin_normal_3"
+        app:layout_constraintTop_toTopOf="@id/guidLine4_1"
+        app:layout_constraintStart_toStartOf="@id/guidLine7"
+        app:layout_constraintEnd_toEndOf="@id/guidLine8"
+        android:id="@+id/tv_winner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,4 +42,6 @@
     <dimen name="text_size_normal_2">20sp</dimen>
     <dimen name="text_size_normal_3">22sp</dimen>
     <dimen name="text_size_normal_4">24sp</dimen>
+    <dimen name="text_size_normal_5">28sp</dimen>
+    <dimen name="text_size_normal_6">32sp</dimen>
 </resources>

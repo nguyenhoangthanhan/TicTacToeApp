@@ -30,6 +30,10 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="btnPlayAgainStyle" parent="buttonStyle">
+        <item name="android:layout_width">0dp</item>
+    </style>
+
     <style name="AIButtonStyle" parent="buttonStyle">
         <item name="android:background">@drawable/ic_rectangle_shape</item>
         <item name="android:textColor">@color/black</item>

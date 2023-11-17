@@ -9,6 +9,7 @@
     <string name="please_enter_valid_name">Please enter valid name</string>
     <string name="team_heart">Team heart</string>
     <string name="team_star">Team star</string>
+    <string name="side">You are team</string>
     <string name="star_side">You are team star</string>
     <string name="hello_user">Hello %1$s :)</string>
     <string name="you_choose">You are team %1$s</string>
@@ -18,4 +19,7 @@
     <string name="description_image_tic_tac_toe_check">Image button check in Tic Tac Toe game</string>
     <string name="description_back_button">Clickable button help back to the forward screen</string>
     <string name="robot">Robot</string>
+    <string name="game_lost"> lost the game!</string>
+    <string name="template_won_game">%1$s won the game!</string>
+    <string name="play_again">Play again!</string>
 </resources>
